@@ -7,9 +7,8 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="<?php bloginfo("template_url") ?>/css/jquery.fancybox.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -57,21 +56,28 @@ $btnLink = ( isset($hb['url']) && $hb['url'] ) ? $hb['url'] : '';
   				<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo-1.png"></a>
   			</div>
 
-        <a class="mobile-menu" id="menutoggle" href="#mobile-menu"><span class="bar"></span><i>Menu</i></a>
+        <div class="burger"><span></span></div>
 
         <div id="siteNav" class="outerNav">
+
     			<nav id="site-navigation" class="main-navigation animated fadeIn" role="navigation">
             <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container'=>false, 'menu_id' => 'primary-menu','link_before'=>'<span>','link_after'=>'</span>',) ); ?>
           </nav>
-          <?php if ($btnName && $btnLink) { ?>
-          <a href="<?php echo $btnLink ?>" target="<?php echo $btnTarget ?>" class="top-cta-btn btn-contact animated fadeInDown"><span><?php echo $btnName ?></span></a>
-          <?php } ?>
+
+          
+
+          <!-- <span id="closeMobileNav"></span> -->
+          
         </div>
       
   		</div>
+      <nav class="mobilemenu">
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu-mobile','link_before'=>'<span>','link_after'=>'</span>','container'=>false) ); ?>
+          </nav>
     </div>	
+    <!-- <div id="navOverlay"></div> -->
 	</header>
-  <div id="navOverlay"></div>
+  
 
 	<?php get_template_part('parts/hero'); ?>
 

@@ -1,0 +1,1 @@
+<nav class="mobilemenu"><?php wp_nav_menu( array( 'theme_location' => 'primary', 'container'=>false) ); ?></nav>
