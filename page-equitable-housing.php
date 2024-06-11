@@ -8,7 +8,7 @@
  */
 get_header(); 
 
-$map = get_field('map');
+$map = get_field('map_embed');
 $pic = get_field('pic');
 $table = get_field('table');
 ?>
