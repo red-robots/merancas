@@ -183,6 +183,12 @@ a {
   width: 296px;
   transition: all ease .2s;
   @include tab {
+    width: 200px;
+  }
+  @include mid {
+    width: 200px;
+  }
+  @include desk {
     width: 460px;
   }
   img {
@@ -227,7 +233,7 @@ body.logged-in {
   width: 100%;
   position: relative;
   @include tab() {
-    margin-top: 128px;
+    margin-top: 100px;
   }
 }
 .site-header {
@@ -951,8 +957,12 @@ section.map {
   }
   .left, .right {
     width: 100%;
+    margin-bottom: 20px;
     @include tab() {
       width: 45%;
+    }
+    iframe {
+      max-width: 100%;
     }
     img {
       width: 100%;
