@@ -1514,8 +1514,8 @@ div.more-button a.more:hover .arrow:before,div.more-button a.more:hover .arrow:a
 .content-area h3{font-style:21px;margin-bottom:20px}
 .purple{background-color:#e0d7e9;padding:40px}
 .entry-content{font-family:"Merriweather",serif;width:100%;overflow:hidden;font-size:14px;color:#2a2a2a;line-height:1.5}
-.entry-content ul{margin-bottom:30px;list-style-type:disc;list-style-position:inside;list-style-image:none}
-.entry-content li{padding-left:10px;margin-bottom:10px}
+.entry-content ul{margin-bottom:30px;list-style-type:disc;list-style-image:none;padding-left:15px}
+.entry-content li{margin-bottom:10px}
 .entry-content p{margin-bottom:20px}
 .entry-content hr{margin-bottom:20px}
 .entry-content .button{width:auto;display:inline-block}
@@ -1556,6 +1556,12 @@ section.map-embed{width:100%;margin:0;float:left}
 section.map-embed iframe{width:100%}
 .gform_footer{padding:0;display:inline-block !important}
 .gform_footer input.gform_button{padding:20px 30px;background-color:#663795 !important}
+section.interns .year{width:100%;text-align:center;font-size:28px;font-weight:bold;padding:20px 0}
+section.interns .intern-wrap{width:100%}
+section.interns .intern-wrap .intern{width:100%}
+section.interns .intern-wrap .intern .photo{width:100%}
+section.interns .intern-wrap .intern .photo img{width:100%}
+section.interns .intern-wrap .intern .info{width:100%;padding:20px}
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),only screen and (min--moz-device-pixel-ratio:1.5),only screen and (min-device-pixel-ratio:1.5){#fancybox-loading,.fancybox-close,.fancybox-next span,.fancybox-prev span{background-image:url(../images/fancybox/fancybox_sprite@2x.png);background-size:44px 152px}
 #fancybox-loading div{background-image:url(../images/fancybox/fancybox_loading@2x.gif);background-size:24px 24px}
 }@media(min-width:667px){nav.mobilemenu{padding:120px 90px 70px 90px}
@@ -1588,7 +1594,9 @@ section.map{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-ori
 section.map .left,section.map .right{width:45%}
 section.table-mobile{display:none}
 section.table{width:100%;float:left;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:30px 0}
-section.table .theader,section.table .tdiv{width:24.5%}
+section.table .theader,section.table .tdiv{width:33%}
+section.interns .intern-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+section.interns .intern-wrap .intern{width:28%}
 }@media(min-width:960px){#site-logo{width:200px}
 }@media screen and (min-width:1200px){nav.mobilemenu{display:none}
 }@media(min-width:1200px){#site-logo{width:460px}

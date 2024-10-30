@@ -33,7 +33,7 @@ $table = get_field('table');
       		<div class="theader">Site</div>
       		<div class="theader">PID</div>
       		<div class="theader">Acres</div>
-      		<div class="theader">Status</div>
+      		<!-- <div class="theader">Status</div> -->
       		<?php foreach( $table as $t ) { ?>
       			<div class="tdiv">
       				<?php echo $t['site']; ?>
@@ -44,9 +44,9 @@ $table = get_field('table');
       			<div class="tdiv">
       				<?php echo $t['acres']; ?>
       			</div>
-      			<div class="tdiv">
+      			<!-- <div class="tdiv">
       				<?php echo $t['status']; ?>
-      			</div>
+      			</div> -->
       		<?php } ?>
       	</section>
 
