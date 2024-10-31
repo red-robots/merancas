@@ -1514,7 +1514,8 @@ div.more-button a.more:hover .arrow:before,div.more-button a.more:hover .arrow:a
 .content-area h3{font-style:21px;margin-bottom:20px}
 .purple{background-color:#e0d7e9;padding:40px}
 .entry-content{font-family:"Merriweather",serif;width:100%;overflow:hidden;font-size:14px;color:#2a2a2a;line-height:1.5}
-.entry-content ul{margin-bottom:30px;list-style-type:disc;list-style-image:none;padding-left:15px}
+.entry-content ul{margin-top:5px;list-style-type:disc;list-style-image:none;padding-left:15px}
+.entry-content ul ul{list-style-type:circle}
 .entry-content li{margin-bottom:10px}
 .entry-content p{margin-bottom:20px}
 .entry-content hr{margin-bottom:20px}

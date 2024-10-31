@@ -727,11 +727,15 @@ div.more-button {
   color: $gray;
   line-height: 1.5;
   ul {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
+    margin-top: 5px;
     list-style-type: disc;
     // list-style-position: inside;
     list-style-image: none;
     padding-left: 15px;
+    ul {
+      list-style-type: circle;
+    }
   }
   li {
     // list-style: disc;
