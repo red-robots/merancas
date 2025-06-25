@@ -1049,12 +1049,14 @@ section.interns {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
+      // justify-content: space-between;
+      justify-content: center;
     }
     .intern {
       width: 100%;
       @include tab {
         width: 28%;
+        margin: 20px;
       }
       .photo {
         width: 100%;
