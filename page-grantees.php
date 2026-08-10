@@ -43,7 +43,9 @@ get_header(); ?>
 						<?php foreach( $block as $b ) { ?>
 							<div class="tee">
 								<div class="image">
-									<img src="<?php echo $b['image']['url']; ?>" alt="<?php echo $b['image']['alt']; ?>">
+									<?php if ( ! empty($b['image']) && is_array($b['image']) ) { ?>
+										<img src="<?php echo esc_url($b['image']['url']); ?>" alt="<?php echo esc_attr($b['image']['alt']); ?>">
+									<?php } ?>
 								</div>
 								
 								<div class="link">
