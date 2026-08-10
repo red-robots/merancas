@@ -50,7 +50,22 @@ get_header(); ?>
 								
 								<div class="link">
 									<h4><?php echo $b['title']; ?></h4>
-									<a href="<?php echo $b['link']['url']; ?>" target="<?php echo $b['link']['target']; ?>"><?php echo $b['link']['title']; ?></a>
+									<!-- <a href="<?php echo $b['link']['url']; ?>" target="<?php echo $b['link']['target']; ?>"><?php echo $b['link']['title']; ?></a> -->
+									<?php if ( ! empty($b['link']) ) : ?>
+
+										<?php if ( is_array($b['link']) ) : ?>
+											<a href="<?php echo esc_url($b['link']['url']); ?>"
+											   target="<?php echo esc_attr($b['link']['target'] ?: '_self'); ?>">
+												<?php echo esc_html($b['link']['title']); ?>
+											</a>
+
+										<?php elseif ( is_string($b['link']) ) : ?>
+											<a href="<?php echo esc_url($b['link']); ?>">
+												<?php echo esc_html($b['title']); ?>
+											</a>
+										<?php endif; ?>
+
+									<?php endif; ?>
 								</div>
 							</div>	
 						<?php } ?>
